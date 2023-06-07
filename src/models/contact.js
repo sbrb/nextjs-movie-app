@@ -20,7 +20,7 @@ const contactSchema = new mongoose.Schema(
         },
     },
     {
-        timestamp: true,
+        timestamps: true,
     })
 
 const Contact = mongoose.models.Contact || mongoose.model('Contact', contactSchema)
